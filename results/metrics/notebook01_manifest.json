@@ -1,0 +1,84 @@
+{
+  "notebook": "01_data_clients",
+  "config_signature": {
+    "window_lengths": [
+      12,
+      24,
+      48
+    ],
+    "primary_window_length": 24,
+    "window_stride": 1,
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "min_windows_per_split": 30,
+    "log_transform": true,
+    "encoder_hidden_dims": [
+      128,
+      64
+    ],
+    "latent_dim": 8,
+    "fed_rounds": 100,
+    "local_epochs": 5,
+    "total_epoch_budget": 500,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "internet2_routers": [
+      "atlanta",
+      "batonrouge",
+      "boston",
+      "dallas",
+      "elpaso",
+      "jackson",
+      "jacksonville",
+      "louisville",
+      "phoenix",
+      "reno"
+    ],
+    "cesnet_primary_ids": [
+      "2",
+      "0",
+      "49",
+      "1",
+      "48",
+      "3",
+      "61",
+      "53",
+      "57",
+      "50"
+    ],
+    "cesnet_trim_hours": 1512
+  },
+  "n_training_clients": 20,
+  "n_internet2_clients": 10,
+  "n_cesnet_clients": 10,
+  "allo_available": true,
+  "allo_role": "holdout_probe",
+  "window_lengths_built": [
+    12,
+    24,
+    48
+  ],
+  "primary_window_length": 24,
+  "min_hours_required": {
+    "12": 274,
+    "24": 354,
+    "48": 514
+  },
+  "artifacts": {
+    "clients_dir": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/clients",
+    "table1": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/metrics/table1_clients.csv",
+    "table1_detail": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/metrics/table1_per_client_detail.csv",
+    "figure1": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/charts/F1_traffic_regimes.pdf"
+  }
+}

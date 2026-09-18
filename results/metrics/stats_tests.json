@@ -1,0 +1,37 @@
+{
+  "wilcoxon_fed_vs_local": {
+    "statistic": 196.0,
+    "p_value": 0.0001049041748046875,
+    "n_clients": 20,
+    "interpretation": "paired one-sided: local-only error > federated error"
+  },
+  "mannwhitney_i2_vs_cesnet_benefit": {
+    "statistic": 96.0,
+    "p_value": 0.00029141997158963715,
+    "i2_median": 9.188132731435049,
+    "cesnet_median": 1.8845398677242948,
+    "interpretation": "one-sided: Internet2 benefit > CESNET3 benefit"
+  },
+  "pearson_within_Internet2": {
+    "r": -0.42866323182054816,
+    "p_value": 0.21643805584446876
+  },
+  "pearson_within_CESNET3": {
+    "note": "n_train near-constant, not computable"
+  },
+  "pearson_pooled": {
+    "r": -0.6199709925198595,
+    "p_value": 0.0035466751334642566
+  },
+  "stratified_summary": {
+    "internet2_mean": 21.619799296051287,
+    "internet2_median": 9.188132731435049,
+    "cesnet_mean": 1.3464648965828236,
+    "cesnet_median": 1.8845398677242948,
+    "internet2_mean_drop_top1": 16.609921952190632,
+    "internet2_mean_drop_top2": 11.564320169636172,
+    "wins": 15,
+    "ties": 4,
+    "losses": 1
+  }
+}

@@ -1,0 +1,4 @@
+Regime,Total bytes moved,Raw data exposed,Crosses admin boundary
+Centralized,210752.0,Yes,Yes
+Federated,383488000.0,No,No
+Local-only,0.0,No,No

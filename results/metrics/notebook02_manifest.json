@@ -1,0 +1,546 @@
+{
+  "notebook": "02_train_regimes",
+  "config_signature": {
+    "window_lengths": [
+      12,
+      24,
+      48
+    ],
+    "primary_window_length": 24,
+    "window_stride": 1,
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "min_windows_per_split": 30,
+    "log_transform": true,
+    "encoder_hidden_dims": [
+      128,
+      64
+    ],
+    "latent_dim": 8,
+    "fed_rounds": 100,
+    "local_epochs": 5,
+    "total_epoch_budget": 500,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "internet2_routers": [
+      "atlanta",
+      "batonrouge",
+      "boston",
+      "dallas",
+      "elpaso",
+      "jackson",
+      "jacksonville",
+      "louisville",
+      "phoenix",
+      "reno"
+    ],
+    "cesnet_primary_ids": [
+      "2",
+      "0",
+      "49",
+      "1",
+      "48",
+      "3",
+      "61",
+      "53",
+      "57",
+      "50"
+    ],
+    "cesnet_trim_hours": 1512
+  },
+  "device": "cuda",
+  "window_length": 24,
+  "n_clients": 20,
+  "n_params": 23968,
+  "model_bytes": 95872,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "run_info": {
+    "42": {
+      "centralized": {
+        "best_epoch": 36,
+        "best_val": 0.08595596253871918
+      },
+      "federated": {
+        "best_round": 97,
+        "best_val": 0.08668662015115843,
+        "rounds_run": 100
+      },
+      "local_only": {
+        "0": {
+          "best_epoch": 84,
+          "best_val": 0.14799533784389496
+        },
+        "1": {
+          "best_epoch": 115,
+          "best_val": 0.01997150480747223
+        },
+        "2": {
+          "best_epoch": 137,
+          "best_val": 0.023900896310806274
+        },
+        "3": {
+          "best_epoch": 65,
+          "best_val": 0.001009273575618863
+        },
+        "4": {
+          "best_epoch": 162,
+          "best_val": 0.022291630506515503
+        },
+        "5": {
+          "best_epoch": 75,
+          "best_val": 0.15342378616333008
+        },
+        "6": {
+          "best_epoch": 69,
+          "best_val": 0.13625749945640564
+        },
+        "7": {
+          "best_epoch": 154,
+          "best_val": 0.0031894207932054996
+        },
+        "8": {
+          "best_epoch": 85,
+          "best_val": 0.11687475442886353
+        },
+        "9": {
+          "best_epoch": 271,
+          "best_val": 0.026056895032525063
+        },
+        "10": {
+          "best_epoch": 34,
+          "best_val": 0.2308170646429062
+        },
+        "11": {
+          "best_epoch": 252,
+          "best_val": 0.017614055424928665
+        },
+        "12": {
+          "best_epoch": 36,
+          "best_val": 0.2721511125564575
+        },
+        "13": {
+          "best_epoch": 106,
+          "best_val": 0.07232661545276642
+        },
+        "14": {
+          "best_epoch": 118,
+          "best_val": 0.08274126797914505
+        },
+        "15": {
+          "best_epoch": 114,
+          "best_val": 0.05028003454208374
+        },
+        "16": {
+          "best_epoch": 39,
+          "best_val": 0.150101900100708
+        },
+        "17": {
+          "best_epoch": 178,
+          "best_val": 0.04220046475529671
+        },
+        "18": {
+          "best_epoch": 90,
+          "best_val": 0.08368224650621414
+        },
+        "19": {
+          "best_epoch": 121,
+          "best_val": 0.03948068246245384
+        }
+      }
+    },
+    "43": {
+      "centralized": {
+        "best_epoch": 105,
+        "best_val": 0.09253433346748352
+      },
+      "federated": {
+        "best_round": 95,
+        "best_val": 0.08891902120085433,
+        "rounds_run": 100
+      },
+      "local_only": {
+        "0": {
+          "best_epoch": 80,
+          "best_val": 0.1546139419078827
+        },
+        "1": {
+          "best_epoch": 188,
+          "best_val": 0.017042826861143112
+        },
+        "2": {
+          "best_epoch": 115,
+          "best_val": 0.02699112705886364
+        },
+        "3": {
+          "best_epoch": 100,
+          "best_val": 0.0009107784717343748
+        },
+        "4": {
+          "best_epoch": 224,
+          "best_val": 0.021797139197587967
+        },
+        "5": {
+          "best_epoch": 231,
+          "best_val": 0.165739506483078
+        },
+        "6": {
+          "best_epoch": 51,
+          "best_val": 0.1273323893547058
+        },
+        "7": {
+          "best_epoch": 80,
+          "best_val": 0.0038254510145634413
+        },
+        "8": {
+          "best_epoch": 88,
+          "best_val": 0.1136675551533699
+        },
+        "9": {
+          "best_epoch": 343,
+          "best_val": 0.025799954310059547
+        },
+        "10": {
+          "best_epoch": 44,
+          "best_val": 0.2278517633676529
+        },
+        "11": {
+          "best_epoch": 253,
+          "best_val": 0.016777653247117996
+        },
+        "12": {
+          "best_epoch": 54,
+          "best_val": 0.2743380069732666
+        },
+        "13": {
+          "best_epoch": 93,
+          "best_val": 0.07369454950094223
+        },
+        "14": {
+          "best_epoch": 111,
+          "best_val": 0.08551973849534988
+        },
+        "15": {
+          "best_epoch": 100,
+          "best_val": 0.05046430602669716
+        },
+        "16": {
+          "best_epoch": 46,
+          "best_val": 0.15176010131835938
+        },
+        "17": {
+          "best_epoch": 148,
+          "best_val": 0.04130856692790985
+        },
+        "18": {
+          "best_epoch": 86,
+          "best_val": 0.08402587473392487
+        },
+        "19": {
+          "best_epoch": 115,
+          "best_val": 0.0387570895254612
+        }
+      }
+    },
+    "44": {
+      "centralized": {
+        "best_epoch": 28,
+        "best_val": 0.08502832800149918
+      },
+      "federated": {
+        "best_round": 82,
+        "best_val": 0.08724015359475742,
+        "rounds_run": 100
+      },
+      "local_only": {
+        "0": {
+          "best_epoch": 98,
+          "best_val": 0.14757438004016876
+        },
+        "1": {
+          "best_epoch": 169,
+          "best_val": 0.0169904213398695
+        },
+        "2": {
+          "best_epoch": 122,
+          "best_val": 0.025184055790305138
+        },
+        "3": {
+          "best_epoch": 62,
+          "best_val": 0.0009662492084316909
+        },
+        "4": {
+          "best_epoch": 166,
+          "best_val": 0.019856799393892288
+        },
+        "5": {
+          "best_epoch": 198,
+          "best_val": 0.14942926168441772
+        },
+        "6": {
+          "best_epoch": 47,
+          "best_val": 0.1283564269542694
+        },
+        "7": {
+          "best_epoch": 364,
+          "best_val": 0.002641691593453288
+        },
+        "8": {
+          "best_epoch": 95,
+          "best_val": 0.10581577569246292
+        },
+        "9": {
+          "best_epoch": 279,
+          "best_val": 0.028546124696731567
+        },
+        "10": {
+          "best_epoch": 42,
+          "best_val": 0.22985051572322845
+        },
+        "11": {
+          "best_epoch": 275,
+          "best_val": 0.017343632876873016
+        },
+        "12": {
+          "best_epoch": 73,
+          "best_val": 0.27943155169487
+        },
+        "13": {
+          "best_epoch": 119,
+          "best_val": 0.07538831233978271
+        },
+        "14": {
+          "best_epoch": 156,
+          "best_val": 0.07831256091594696
+        },
+        "15": {
+          "best_epoch": 117,
+          "best_val": 0.05006042867898941
+        },
+        "16": {
+          "best_epoch": 49,
+          "best_val": 0.14876776933670044
+        },
+        "17": {
+          "best_epoch": 124,
+          "best_val": 0.043263960629701614
+        },
+        "18": {
+          "best_epoch": 101,
+          "best_val": 0.08433254808187485
+        },
+        "19": {
+          "best_epoch": 161,
+          "best_val": 0.037903569638729095
+        }
+      }
+    },
+    "45": {
+      "centralized": {
+        "best_epoch": 22,
+        "best_val": 0.08514726907014847
+      },
+      "federated": {
+        "best_round": 98,
+        "best_val": 0.08890792071470059,
+        "rounds_run": 100
+      },
+      "local_only": {
+        "0": {
+          "best_epoch": 92,
+          "best_val": 0.14608439803123474
+        },
+        "1": {
+          "best_epoch": 195,
+          "best_val": 0.016980556771159172
+        },
+        "2": {
+          "best_epoch": 119,
+          "best_val": 0.02794359251856804
+        },
+        "3": {
+          "best_epoch": 70,
+          "best_val": 0.000964223057962954
+        },
+        "4": {
+          "best_epoch": 136,
+          "best_val": 0.019164593890309334
+        },
+        "5": {
+          "best_epoch": 156,
+          "best_val": 0.17527972161769867
+        },
+        "6": {
+          "best_epoch": 43,
+          "best_val": 0.12947970628738403
+        },
+        "7": {
+          "best_epoch": 195,
+          "best_val": 0.0030459014233201742
+        },
+        "8": {
+          "best_epoch": 75,
+          "best_val": 0.11847636848688126
+        },
+        "9": {
+          "best_epoch": 307,
+          "best_val": 0.02773105725646019
+        },
+        "10": {
+          "best_epoch": 45,
+          "best_val": 0.23269346356391907
+        },
+        "11": {
+          "best_epoch": 186,
+          "best_val": 0.01759525015950203
+        },
+        "12": {
+          "best_epoch": 53,
+          "best_val": 0.2696892321109772
+        },
+        "13": {
+          "best_epoch": 106,
+          "best_val": 0.07745137065649033
+        },
+        "14": {
+          "best_epoch": 148,
+          "best_val": 0.08539795875549316
+        },
+        "15": {
+          "best_epoch": 83,
+          "best_val": 0.0497051365673542
+        },
+        "16": {
+          "best_epoch": 39,
+          "best_val": 0.15141358971595764
+        },
+        "17": {
+          "best_epoch": 134,
+          "best_val": 0.04231109097599983
+        },
+        "18": {
+          "best_epoch": 83,
+          "best_val": 0.08448627591133118
+        },
+        "19": {
+          "best_epoch": 106,
+          "best_val": 0.039150673896074295
+        }
+      }
+    },
+    "46": {
+      "centralized": {
+        "best_epoch": 86,
+        "best_val": 0.08680279552936554
+      },
+      "federated": {
+        "best_round": 87,
+        "best_val": 0.08704863458697218,
+        "rounds_run": 100
+      },
+      "local_only": {
+        "0": {
+          "best_epoch": 88,
+          "best_val": 0.1507868468761444
+        },
+        "1": {
+          "best_epoch": 148,
+          "best_val": 0.01733013056218624
+        },
+        "2": {
+          "best_epoch": 147,
+          "best_val": 0.026281999424099922
+        },
+        "3": {
+          "best_epoch": 84,
+          "best_val": 0.0009180007036775351
+        },
+        "4": {
+          "best_epoch": 173,
+          "best_val": 0.02111751213669777
+        },
+        "5": {
+          "best_epoch": 110,
+          "best_val": 0.15061123669147491
+        },
+        "6": {
+          "best_epoch": 42,
+          "best_val": 0.1276349127292633
+        },
+        "7": {
+          "best_epoch": 81,
+          "best_val": 0.003544576931744814
+        },
+        "8": {
+          "best_epoch": 80,
+          "best_val": 0.11578385531902313
+        },
+        "9": {
+          "best_epoch": 283,
+          "best_val": 0.02720739133656025
+        },
+        "10": {
+          "best_epoch": 49,
+          "best_val": 0.23583291471004486
+        },
+        "11": {
+          "best_epoch": 180,
+          "best_val": 0.01791074313223362
+        },
+        "12": {
+          "best_epoch": 49,
+          "best_val": 0.27409839630126953
+        },
+        "13": {
+          "best_epoch": 141,
+          "best_val": 0.07433708012104034
+        },
+        "14": {
+          "best_epoch": 121,
+          "best_val": 0.08104586601257324
+        },
+        "15": {
+          "best_epoch": 97,
+          "best_val": 0.05137953534722328
+        },
+        "16": {
+          "best_epoch": 43,
+          "best_val": 0.14978550374507904
+        },
+        "17": {
+          "best_epoch": 152,
+          "best_val": 0.04239803925156593
+        },
+        "18": {
+          "best_epoch": 139,
+          "best_val": 0.08533915132284164
+        },
+        "19": {
+          "best_epoch": 115,
+          "best_val": 0.03857957944273949
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "models_dir": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/models/L24",
+    "histories": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/metrics/histories.parquet",
+    "comm_costs": "/lustre/work/ramamurthy/mhnarfth/indis2026-federated/outputs/indis2026/metrics/comm_costs.json"
+  }
+}

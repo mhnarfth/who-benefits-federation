@@ -1,0 +1,4 @@
+Network,Clients,Role,Regime,Hours (min-max),Train windows (min-max),Test windows (min-max)
+Internet2,10,training client,machine-driven,789-1466,529-1003,96-197
+CESNET3,10,training client,human-driven,1512-1512,1035-1035,204-204
+ALLO,1,holdout probe,broadband,48,n/a,n/a

@@ -1,0 +1,42 @@
+{
+  "n_params": 23968,
+  "model_bytes": 95872,
+  "n_clients": 20,
+  "mean_rounds": 100.0,
+  "fedavg_total_bytes": 383488000.0,
+  "centralize_hourly_total_bytes": 210752.0,
+  "fedavg_vs_hourly_ratio": 1819.617370179168,
+  "crossover_bytes_per_client": 19174400.0,
+  "scenarios": [
+    {
+      "label": "Hourly univariate (this paper)",
+      "bytes_per_client": 10537.6,
+      "centralize_total_bytes": 210752.0,
+      "cheaper": "Centralize"
+    },
+    {
+      "label": "5-min univariate",
+      "bytes_per_client": 126451.20000000001,
+      "centralize_total_bytes": 2529024.0,
+      "cheaper": "Centralize"
+    },
+    {
+      "label": "5-min, 12-metric multivariate",
+      "bytes_per_client": 1517414.4000000001,
+      "centralize_total_bytes": 30348288.000000004,
+      "cheaper": "Centralize"
+    },
+    {
+      "label": "1-sec, 12-metric multivariate",
+      "bytes_per_client": 455224320.0,
+      "centralize_total_bytes": 9104486400.0,
+      "cheaper": "Federate"
+    },
+    {
+      "label": "Raw NetFlow records (~1.5 GB)",
+      "bytes_per_client": 1500000000.0,
+      "centralize_total_bytes": 30000000000.0,
+      "cheaper": "Federate"
+    }
+  ]
+}
